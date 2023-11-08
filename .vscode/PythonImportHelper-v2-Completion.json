@@ -35,6 +35,15 @@
         "documentation": {}
     },
     {
+        "label": "PyPDF2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PyPDF2",
+        "description": "PyPDF2",
+        "detail": "PyPDF2",
+        "documentation": {}
+    },
+    {
         "label": "lower",
         "kind": 5,
         "importPath": "1. Number Guessing Game",
@@ -194,6 +203,33 @@
         "description": "5. Rock Paper Scissors Game",
         "peekOfCode": "player2 = random.choice([\"Rock\", \"Paper\", \"Scissor\"]).lower()\nprint(\"Player 2 selected: \", player2)\nif player1 == \"rock\" and player2 == \"paper\":\n    print(\"Player 2 Won\")\nelif player1 == \"paper\" and player2 == \"scissor\":\n    print(\"Player 2 Won\")\nelif player1 == \"scissor\" and player2 == \"rock\":\n    print(\"Player 2 Won\")\nelif player1 == player2:\n    print(\"Tie\")",
         "detail": "5. Rock Paper Scissors Game",
+        "documentation": {}
+    },
+    {
+        "label": "pdf",
+        "kind": 5,
+        "importPath": "6. Extract text from Pdf",
+        "description": "6. Extract text from Pdf",
+        "peekOfCode": "pdf = open(\"Pdf-file-name.pdf\", \"rb\")\nreader = PyPDF2.PdfFileReader(pdf)\npage = reader.getPage(0)\nprint(page.extractText())",
+        "detail": "6. Extract text from Pdf",
+        "documentation": {}
+    },
+    {
+        "label": "reader",
+        "kind": 5,
+        "importPath": "6. Extract text from Pdf",
+        "description": "6. Extract text from Pdf",
+        "peekOfCode": "reader = PyPDF2.PdfFileReader(pdf)\npage = reader.getPage(0)\nprint(page.extractText())",
+        "detail": "6. Extract text from Pdf",
+        "documentation": {}
+    },
+    {
+        "label": "page",
+        "kind": 5,
+        "importPath": "6. Extract text from Pdf",
+        "description": "6. Extract text from Pdf",
+        "peekOfCode": "page = reader.getPage(0)\nprint(page.extractText())",
+        "detail": "6. Extract text from Pdf",
         "documentation": {}
     }
 ]

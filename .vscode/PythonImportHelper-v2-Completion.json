@@ -27,6 +27,14 @@
         "documentation": {}
     },
     {
+        "label": "SpellChecker",
+        "importPath": "spellchecker",
+        "description": "spellchecker",
+        "isExtraImport": true,
+        "detail": "spellchecker",
+        "documentation": {}
+    },
+    {
         "label": "lower",
         "kind": 5,
         "importPath": "1. Number Guessing Game",
@@ -150,6 +158,24 @@
         "description": "3. Countdown Timer",
         "peekOfCode": "t = input(\"Enter the time in seconds: \")\n# function call\ncountdown(int(t))",
         "detail": "3. Countdown Timer",
+        "documentation": {}
+    },
+    {
+        "label": "corrector",
+        "kind": 5,
+        "importPath": "4. Spelling Corrector",
+        "description": "4. Spelling Corrector",
+        "peekOfCode": "corrector = SpellChecker()\nword = input(\"Enter a Word : \")\nif word in corrector:\n    print(\"Correct\")\nelse:\n    correct_word = corrector.correction(word)\n    print(\"Correct Spelling is \", correct_word)",
+        "detail": "4. Spelling Corrector",
+        "documentation": {}
+    },
+    {
+        "label": "word",
+        "kind": 5,
+        "importPath": "4. Spelling Corrector",
+        "description": "4. Spelling Corrector",
+        "peekOfCode": "word = input(\"Enter a Word : \")\nif word in corrector:\n    print(\"Correct\")\nelse:\n    correct_word = corrector.correction(word)\n    print(\"Correct Spelling is \", correct_word)",
+        "detail": "4. Spelling Corrector",
         "documentation": {}
     }
 ]

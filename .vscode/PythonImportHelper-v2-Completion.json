@@ -177,5 +177,23 @@
         "peekOfCode": "word = input(\"Enter a Word : \")\nif word in corrector:\n    print(\"Correct\")\nelse:\n    correct_word = corrector.correction(word)\n    print(\"Correct Spelling is \", correct_word)",
         "detail": "4. Spelling Corrector",
         "documentation": {}
+    },
+    {
+        "label": "player1",
+        "kind": 5,
+        "importPath": "5. Rock Paper Scissor",
+        "description": "5. Rock Paper Scissor",
+        "peekOfCode": "player1 = input(\"Select Rock, Paper, or Scissor :\").lower()\nplayer2 = random.choice([\"Rock\", \"Paper\", \"Scissor\"]).lower()\nprint(\"Player 2 selected: \", player2)\nif player1 == \"rock\" and player2 == \"paper\":\n    print(\"Player 2 Won\")\nelif player1 == \"paper\" and player2 == \"scissor\":\n    print(\"Player 2 Won\")\nelif player1 == \"scissor\" and player2 == \"rock\":\n    print(\"Player 2 Won\")\nelif player1 == player2:",
+        "detail": "5. Rock Paper Scissor",
+        "documentation": {}
+    },
+    {
+        "label": "player2",
+        "kind": 5,
+        "importPath": "5. Rock Paper Scissor",
+        "description": "5. Rock Paper Scissor",
+        "peekOfCode": "player2 = random.choice([\"Rock\", \"Paper\", \"Scissor\"]).lower()\nprint(\"Player 2 selected: \", player2)\nif player1 == \"rock\" and player2 == \"paper\":\n    print(\"Player 2 Won\")\nelif player1 == \"paper\" and player2 == \"scissor\":\n    print(\"Player 2 Won\")\nelif player1 == \"scissor\" and player2 == \"rock\":\n    print(\"Player 2 Won\")\nelif player1 == player2:\n    print(\"Tie\")",
+        "detail": "5. Rock Paper Scissor",
+        "documentation": {}
     }
 ]

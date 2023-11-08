@@ -44,6 +44,14 @@
         "documentation": {}
     },
     {
+        "label": "profanity",
+        "importPath": "better_profanity",
+        "description": "better_profanity",
+        "isExtraImport": true,
+        "detail": "better_profanity",
+        "documentation": {}
+    },
+    {
         "label": "lower",
         "kind": 5,
         "importPath": "1. Number Guessing Game",
@@ -230,6 +238,24 @@
         "description": "6. Extract text from Pdf",
         "peekOfCode": "page = reader.getPage(0)\nprint(page.extractText())",
         "detail": "6. Extract text from Pdf",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "7. Remove cuss words",
+        "description": "7. Remove cuss words",
+        "peekOfCode": "text = \"Fuck off and leave me alone for god's sake\"\ncensored = profanity.censor(text)\nprint(censored)",
+        "detail": "7. Remove cuss words",
+        "documentation": {}
+    },
+    {
+        "label": "censored",
+        "kind": 5,
+        "importPath": "7. Remove cuss words",
+        "description": "7. Remove cuss words",
+        "peekOfCode": "censored = profanity.censor(text)\nprint(censored)",
+        "detail": "7. Remove cuss words",
         "documentation": {}
     }
 ]

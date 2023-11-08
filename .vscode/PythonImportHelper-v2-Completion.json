@@ -52,6 +52,30 @@
         "documentation": {}
     },
     {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "simpledialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Tk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
         "label": "lower",
         "kind": 5,
         "importPath": "1. Number Guessing Game",
@@ -256,6 +280,69 @@
         "description": "7. Remove cuss words",
         "peekOfCode": "censored = profanity.censor(text)\nprint(censored)",
         "detail": "7. Remove cuss words",
+        "documentation": {}
+    },
+    {
+        "label": "is_even",
+        "kind": 2,
+        "importPath": "8. Incrypt and Decrypt using Python",
+        "description": "8. Incrypt and Decrypt using Python",
+        "peekOfCode": "def is_even(number):\n    return number % 2 == 0\ndef get_even_letters(message):\n    even_letters = []\n    for counter in range(0, len(message)):\n        if is_even(counter):\n            even_letters.append(message[counter])\n    return even_letters\ndef get_odd_letters(message):\n    odd_letters = []",
+        "detail": "8. Incrypt and Decrypt using Python",
+        "documentation": {}
+    },
+    {
+        "label": "get_even_letters",
+        "kind": 2,
+        "importPath": "8. Incrypt and Decrypt using Python",
+        "description": "8. Incrypt and Decrypt using Python",
+        "peekOfCode": "def get_even_letters(message):\n    even_letters = []\n    for counter in range(0, len(message)):\n        if is_even(counter):\n            even_letters.append(message[counter])\n    return even_letters\ndef get_odd_letters(message):\n    odd_letters = []\n    for counter in range(0, len(message)):\n        if not is_even(counter):",
+        "detail": "8. Incrypt and Decrypt using Python",
+        "documentation": {}
+    },
+    {
+        "label": "get_odd_letters",
+        "kind": 2,
+        "importPath": "8. Incrypt and Decrypt using Python",
+        "description": "8. Incrypt and Decrypt using Python",
+        "peekOfCode": "def get_odd_letters(message):\n    odd_letters = []\n    for counter in range(0, len(message)):\n        if not is_even(counter):\n            odd_letters.append(message[counter])\n    return odd_letters\ndef swap_letters(message):\n    letter_list = []\n    if not is_even(len(message)):\n        message = message + \"x\"",
+        "detail": "8. Incrypt and Decrypt using Python",
+        "documentation": {}
+    },
+    {
+        "label": "swap_letters",
+        "kind": 2,
+        "importPath": "8. Incrypt and Decrypt using Python",
+        "description": "8. Incrypt and Decrypt using Python",
+        "peekOfCode": "def swap_letters(message):\n    letter_list = []\n    if not is_even(len(message)):\n        message = message + \"x\"\n    even_letters = get_even_letters(message)\n    odd_letters = get_odd_letters(message)\n    for counter in range(0, int(len(message) / 2)):\n        letter_list.append(odd_letters[counter])\n        letter_list.append(even_letters[counter])\n    new_message = \"\".join(letter_list)",
+        "detail": "8. Incrypt and Decrypt using Python",
+        "documentation": {}
+    },
+    {
+        "label": "get_task",
+        "kind": 2,
+        "importPath": "8. Incrypt and Decrypt using Python",
+        "description": "8. Incrypt and Decrypt using Python",
+        "peekOfCode": "def get_task():\n    task = simpledialog.askstring(\"Task\", \"Do you want to encrypt or decrypt?\")\n    return task\ndef get_message():\n    message = simpledialog.askstring(\"Message\", \"Enter the secret message: \")\n    return message\nroot = Tk()\nwhile True:\n    task = get_task()\n    if task == \"encrypt\":",
+        "detail": "8. Incrypt and Decrypt using Python",
+        "documentation": {}
+    },
+    {
+        "label": "get_message",
+        "kind": 2,
+        "importPath": "8. Incrypt and Decrypt using Python",
+        "description": "8. Incrypt and Decrypt using Python",
+        "peekOfCode": "def get_message():\n    message = simpledialog.askstring(\"Message\", \"Enter the secret message: \")\n    return message\nroot = Tk()\nwhile True:\n    task = get_task()\n    if task == \"encrypt\":\n        message = get_message()\n        encrypted = swap_letters(message)\n        messagebox.showinfo(\"Ciphertext of the secret message is:\", encrypted)",
+        "detail": "8. Incrypt and Decrypt using Python",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "8. Incrypt and Decrypt using Python",
+        "description": "8. Incrypt and Decrypt using Python",
+        "peekOfCode": "root = Tk()\nwhile True:\n    task = get_task()\n    if task == \"encrypt\":\n        message = get_message()\n        encrypted = swap_letters(message)\n        messagebox.showinfo(\"Ciphertext of the secret message is:\", encrypted)\n    elif task == \"decrypt\":\n        message = get_message()\n        decrypted = swap_letters(message)",
+        "detail": "8. Incrypt and Decrypt using Python",
         "documentation": {}
     }
 ]

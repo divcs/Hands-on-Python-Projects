@@ -18,6 +18,22 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "playsound",
+        "importPath": "playsound",
+        "description": "playsound",
+        "isExtraImport": true,
+        "detail": "playsound",
+        "documentation": {}
+    },
+    {
         "label": "time",
         "kind": 6,
         "isExtraImport": true,
@@ -151,6 +167,51 @@
         "description": "1. Number Guessing Game",
         "peekOfCode": "\tguess = int(input(\"Guess a number:- \"))\n\t# Condition testing\n\tif x == guess:\n\t\tprint(\"Congratulations you did it in \",\n\t\t\tcount, \" try\")\n\t\t# Once guessed, loop will break\n\t\tbreak\n\telif x > guess:\n\t\tprint(\"You guessed too small!\")\n\telif x < guess:",
         "detail": "1. Number Guessing Game",
+        "documentation": {}
+    },
+    {
+        "label": "alarm_time",
+        "kind": 5,
+        "importPath": "10. Alarm Clock",
+        "description": "10. Alarm Clock",
+        "peekOfCode": "alarm_time = input(\"Enter the time of alarm to be set:HH:MM:SS\\n\")\nalarm_hour = alarm_time[0:2]\nalarm_minute = alarm_time[3:5]\nalarm_seconds = alarm_time[6:8]\nalarm_period = alarm_time[9:11].upper()\nprint(\"Setting up alarm..\")\nwhile True:\n    now = datetime.now()\n    current_hour = now.strftime(\"%I\")\n    current_minute = now.strftime(\"%M\")",
+        "detail": "10. Alarm Clock",
+        "documentation": {}
+    },
+    {
+        "label": "alarm_hour",
+        "kind": 5,
+        "importPath": "10. Alarm Clock",
+        "description": "10. Alarm Clock",
+        "peekOfCode": "alarm_hour = alarm_time[0:2]\nalarm_minute = alarm_time[3:5]\nalarm_seconds = alarm_time[6:8]\nalarm_period = alarm_time[9:11].upper()\nprint(\"Setting up alarm..\")\nwhile True:\n    now = datetime.now()\n    current_hour = now.strftime(\"%I\")\n    current_minute = now.strftime(\"%M\")\n    current_seconds = now.strftime(\"%S\")",
+        "detail": "10. Alarm Clock",
+        "documentation": {}
+    },
+    {
+        "label": "alarm_minute",
+        "kind": 5,
+        "importPath": "10. Alarm Clock",
+        "description": "10. Alarm Clock",
+        "peekOfCode": "alarm_minute = alarm_time[3:5]\nalarm_seconds = alarm_time[6:8]\nalarm_period = alarm_time[9:11].upper()\nprint(\"Setting up alarm..\")\nwhile True:\n    now = datetime.now()\n    current_hour = now.strftime(\"%I\")\n    current_minute = now.strftime(\"%M\")\n    current_seconds = now.strftime(\"%S\")\n    current_period = now.strftime(\"%p\")",
+        "detail": "10. Alarm Clock",
+        "documentation": {}
+    },
+    {
+        "label": "alarm_seconds",
+        "kind": 5,
+        "importPath": "10. Alarm Clock",
+        "description": "10. Alarm Clock",
+        "peekOfCode": "alarm_seconds = alarm_time[6:8]\nalarm_period = alarm_time[9:11].upper()\nprint(\"Setting up alarm..\")\nwhile True:\n    now = datetime.now()\n    current_hour = now.strftime(\"%I\")\n    current_minute = now.strftime(\"%M\")\n    current_seconds = now.strftime(\"%S\")\n    current_period = now.strftime(\"%p\")\n    if alarm_period == current_period:",
+        "detail": "10. Alarm Clock",
+        "documentation": {}
+    },
+    {
+        "label": "alarm_period",
+        "kind": 5,
+        "importPath": "10. Alarm Clock",
+        "description": "10. Alarm Clock",
+        "peekOfCode": "alarm_period = alarm_time[9:11].upper()\nprint(\"Setting up alarm..\")\nwhile True:\n    now = datetime.now()\n    current_hour = now.strftime(\"%I\")\n    current_minute = now.strftime(\"%M\")\n    current_seconds = now.strftime(\"%S\")\n    current_period = now.strftime(\"%p\")\n    if alarm_period == current_period:\n        if alarm_hour == current_hour:",
+        "detail": "10. Alarm Clock",
         "documentation": {}
     },
     {
